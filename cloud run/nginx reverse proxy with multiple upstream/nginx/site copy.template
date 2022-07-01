@@ -1,0 +1,13 @@
+upstream api {
+    server api-hot2tlfz3q-ez.a.run.app;
+}
+
+server {
+  # Cloud Run provided $PORT env
+  #listen ${PORT};
+  listen 80;
+
+
+  # Config loaded outside of Docker image
+  ${CONFIG}
+}

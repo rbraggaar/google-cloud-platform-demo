@@ -1,0 +1,1 @@
+docker build -t eu.gcr.io/sandbox-rob-352208/nginx-proxy . && docker run -p 8080:8080 --rm eu.gcr.io/sandbox-rob-352208/nginx-proxy
